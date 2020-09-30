@@ -1,0 +1,537 @@
+<html>
+
+<head>
+    <title>Ejercicios para practicar JavaScript</title>
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <script src="jQuery/jQuery.js"></script>
+</head>
+
+<body class="pink darken-4 container">
+    <!-- Titulo -->
+    <blockquote>
+        <h4 class="white-text">Ejercicios de JS</h4>
+    </blockquote>
+
+    <!-- Lista de ejercicios -->
+    <ul class="collapsible">
+        <!-- EJERCICIO 1 -->
+        <li>
+            <!-- Ejercicio 1 - Header -->
+            <div class="collapsible-header purple lighten-3 black-text">
+                <b>Primer ejercicio</b>
+            </div>
+            <!-- Ejercicio 1 - Body desplegable -->
+            <div class="collapsible-body purple lighten-4 center">
+                <!-- Consigna -->
+                <div class="purple lighten-2">
+                    <br />
+                    <p class="flow-text  white-text">
+                        Debemos crear un programa que pida una <b>nota</b>
+                        mediante un <b>input</b>, <br />
+                        y muestre un mensaje con las siguientes <b>condiciones</b>:
+                    </p>
+                    <br />
+                    <ul class="collection left-align">
+                        <li class="collection-item deep-orange lighten-2">
+                            Mostrar "Aplazado", si la nota está entre 1 y 3 (inclusive)
+                        </li>
+                        <li class="collection-item yellow lighten-2">
+                            Mostrar "Desaprobado", si la nota está entre 4 y 6 (inclusive)
+                        </li>
+                        <li class="collection-item green lighten-2">
+                            Mostrar "Aprobado", si la nota está entre 7 y 10 (inclusive)
+                        </li>
+                    </ul>
+                    <p class="flow-text  white-text">
+                        Para esto crearemos:
+                    </p>
+                    <ul class="collection left-align">
+                        <li class="collection-item">
+                            Una carpeta llamada <b>nota</b>
+                        </li>
+                        <li class="collection-item">
+                            Dentro de <b>nota</b>, crearemos un archivo <b>index.html</b>
+                        </li>
+                    </ul>
+                </div>
+
+                <h1>Paso a paso</h1>
+                <!-- Lista de pasos -->
+                <ul class="collapsible">
+                    <!-- PASO 1 -->
+                    <li>
+                        <!-- Paso 1 - Header -->
+                        <div class="collapsible-header purple lighten-2 white-text">
+                            Paso 1
+                        </div>
+                        <!-- Paso 1 - Body desplegable -->
+                        <div class="collapsible-body">
+                            <ul class="collapsible">
+                                <li>
+                                    <div class="purple darken-2">
+                                        <br />
+                                        <p class="white-text left-align container">
+                                            En <b>index.html</b> escribimos la estructura básica
+                                            de la página web. Además, agregamos el tag <b>script</b>
+                                            en el <b>head</b>
+                                        </p>
+                                        <br />
+                                    </div>
+                                    <!-- Paso 1 - Header -->
+                                    <div class="collapsible-header purple lighten-2 white-text">
+                                        Ver resultado
+                                    </div>
+                                    <!-- Paso 1 - Body desplegable -->
+                                    <div class="collapsible-body blue-grey darken-4 white-text left-align">
+                                        <b>
+                                            <!-- Resultado -->
+                                            &#60;html&#62; <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&#60;head&#62; <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&#60;script&#62; <br /><br />
+            
+                                            &nbsp;&nbsp;&nbsp;&nbsp;
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&#60;/script&#62; <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&#60;/head&#62; <br /><br />
+            
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&#60;body&#62; <br /><br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&#60;/body&#62; <br />
+                                            &#60;/html&#62;
+                                        </b>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!-- PASO 2 -->
+                    <li>
+                        <!-- Paso 2 - Header -->
+                        <div class="collapsible-header purple lighten-2 white-text">
+                            Paso 2
+                        </div>
+                        <!-- Paso 2 - Body desplegable -->
+                        <div class="collapsible-body">
+                            <ul class="collapsible">
+                                <li>
+                                    <div class="purple darken-2">
+                                        <br />
+                                        <p class="white-text left-align container">
+                                            Dentro del <b>body</b>, crearemos un tag <b>h1</b> para pedirle
+                                            al usuario que ingrese una nota, y um tag <b>input</b> donde deberá ingresarla.
+                                            <br />
+                                            Este ultimo debe tener un atributo <b>id</b> que sea <b>nota</b>. <br />
+                                            Tambien se creara un tag <b>button</b> con un atributo <b>onclick</b> que llame a la
+                                            funcion
+                                            <b>mostrarResultado()</b>
+                                        </p>
+                                        <br />
+                                    </div>
+                                    <!-- Paso 2 - Header -->
+                                    <div class="collapsible-header purple lighten-2 white-text">
+                                        Ver resultado
+                                    </div>
+                                    <!-- Paso 2 - Body desplegable -->
+                                    <div class="collapsible-body blue-grey darken-4 white-text left-align">
+                                        <b>
+                                            <!-- Resultado -->
+                                            &#60;body&#62; <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&#60;h1&#62;
+                                            Por favor, ingrese una nota:
+                                            &#60;/h1&#62; <br /><br />
+            
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&#60;input id="nota" /&#62; <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&#60;button onclick="mostrarResultado()"&#62;
+                                            Mostrar!:
+                                            &#60;/button&#62; <br />
+                                            &#60;/body&#62;
+                                        </b>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <!-- PASO 3 -->
+                    <li>
+                        <div class="collapsible-header purple lighten-2 white-text">
+                            Paso 3
+                        </div>
+                        <div class="collapsible-body">
+                            <ul class="collapsible">
+                                <li>
+                                    <div class="purple darken-2">
+                                        <br />
+                                        <p class="white-text left-align container">
+                                            Dentro del <b>script</b>, empezaremos a programar<br />
+                                            Arrancaremos con crear una <b>funcion</b> que se llame <b>mostrarResultado</b>
+                                        </p>
+                                        <br />
+                                    </div>
+                                    <!-- Paso 3 - Header -->
+                                    <div class="collapsible-header purple lighten-2 white-text">
+                                        Ver resultado
+                                    </div>
+                                    <!-- Paso 3 - Body desplegable -->
+                                    <div class="collapsible-body blue-grey darken-4 white-text left-align">
+                                        <b>
+                                            <!-- Resultado -->
+                                            &#60;script&#62; <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;function mostrarResultado(){<br /><br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;}<br />
+                                            &#60;/script&#62;
+                                        </b>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <!-- PASO 4 -->
+                    <li>
+                        <div class="collapsible-header purple lighten-2 white-text">
+                            Paso 4
+                        </div>
+                        <div class="collapsible-body">
+                            <ul class="collapsible">
+                                <li>
+                                    <div class="purple darken-2">
+                                        <br />
+                                        <p class="white-text left-align container">
+                                            Dentro de <b>mostrarResultado</b> vamos a <b>guardar en una variable</b> el contenido
+                                            del <b>input</b> y
+                                            crear una variable llamada <b>resultado</b> que por ahora no tendrá ningún valor
+                                            definido.
+                                        </p>
+                                        <br />
+                                    </div>
+                                    <!-- Paso 4 - Header -->
+                                    <div class="collapsible-header purple lighten-2 white-text">
+                                        Ver resultado
+                                    </div>
+                                    <!-- Paso 4 - Body desplegable -->
+                                    <div class="collapsible-body blue-grey darken-4 white-text left-align">
+                                        <b>
+                                            <!-- Resultado -->
+                                            &#60;script&#62; <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;function mostrarResultado(){<br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var nota =
+                                            document.getElementById("nota").value; <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var resultado; <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;}<br />
+                                            &#60;/script&#62;
+                                        </b>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    
+                    <!-- PASO 5 -->
+                    <li>
+                        <div class="collapsible-header purple lighten-2 white-text">
+                            Paso 5
+                        </div>
+                        <div class="collapsible-body">
+                            <ul class="collapsible">
+                                <li>
+                                    <div class="purple darken-2">
+                                        <br />
+                                        <p class="white-text left-align container">
+                                            Ahora, procedemos a evaluar la primer <b>condicion</b>. <br />
+                                            <b class="deep-orange lighten-2 black-text">
+                                                Mostrar "Aplazado", si la nota está entre 1 y 3 (inclusive)
+                                            </b>
+                                            <br /><br />
+                                            Siempre que hablemos de <b>condicion</b>, usaremos el comando <b>if</b>. <br />
+                                            Sabemos que <b>if</b> ejecuta su bloque de codigo si la condicion entre () es verdadera.
+                                            <br />
+                                            ¿Cual sería la condición en este caso? <br /> <br /> <br />
+            
+                                            Que la <b>nota</b> sea <b>mayor que</b> 0 y <b>menor a 4</b>. <br />
+                                            Para evaluar esto vamos a usar los operadores de <b>comparacion</b>:
+                                            <br />
+                                            ><br />
+                                            < </p>
+                                                <br />
+                                    </div>
+                                    <!-- Paso 5 - Header -->
+                                    <div class="collapsible-header purple lighten-2 white-text">
+                                        Ver resultado
+                                    </div>
+                                    <!-- Paso 5 - Body desplegable -->
+                                    <div class="collapsible-body blue-grey darken-4 white-text left-align">
+                                        <b>
+                                            <!-- Resultado -->
+                                            nota > 0 <br />
+                                            nota
+                                            < 4 <br />
+                                            <b>//Esto suelto no nos sirve, seguir mirando los demas pasos.</b>
+                                        </b>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <!-- PASO 6 -->
+                    <li>
+                        <div class="collapsible-header purple lighten-2 white-text">
+                            Paso 6
+                        </div>
+                        <div class="collapsible-body">
+                            <ul class="collapsible">
+                                <li>
+                                    <div class="purple darken-2">
+                                        <br />
+                                        <p class="white-text left-align container">
+                                            Ya sabemos que las condiciones son <b>nota > 0 </b> Y <b>nota < 4</b><br />
+                                                    <b>Ambas</b> condiciones tienen que ser verdaderas. Vamos a necesitar
+                                                    entonces usar <b>operadores logicos</b>,
+                                                    mas precisamente <b>&&</b> (AND). <br />
+                                        </p>
+                                        <br />
+                                    </div>
+                                    <!-- Paso 6 - Header -->
+                                    <div class="collapsible-header purple lighten-2 white-text">
+                                        Ver resultado
+                                    </div>
+                                    <!-- Paso 6 - Body desplegable -->
+                                    <div class="collapsible-body blue-grey darken-4 white-text left-align">
+                                        <b>
+                                            <!-- Resultado -->
+                                            nota > 0 <b>&&</b> nota
+                                            < 4<br />
+                                            <b>//Esto suelto no nos sirve, seguir mirando los demas pasos.</b>
+                                        </b>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    
+                    <!-- PASO 7 -->
+                    <li>
+                        <div class="collapsible-header purple lighten-2 white-text">
+                            Paso 7
+                        </div>
+                        <div class="collapsible-body">
+                            <ul class="collapsible">
+                                <li>
+                                    <div class="purple darken-2">
+                                        <br />
+                                        <p class="white-text left-align container">
+                                            Ahora ya sabemos que la <b>condicion</b> del if sera: <br />
+                                            nota > 0 <b>&&</b> nota
+                                            < 4 <br />
+                                            Lo que debemos hacer, en base a esto, es asignarle el valor correspondiente
+                                            a <b>resultado</b> cuando esto sea true.
+                                        </p>
+                                        <br />
+                                    </div>
+                                    <!-- Paso 7 - Header -->
+                                    <div class="collapsible-header purple lighten-2 white-text">
+                                        Ver resultado
+                                    </div>
+                                    <!-- Paso 7 - Body desplegable -->
+                                    <div class="collapsible-body blue-grey darken-4 white-text left-align">
+                                        <b>
+                                            <!-- Resultado -->
+                                            &#60;script&#62; <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;function mostrarResultado(){<br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var nota =
+                                            document.getElementById("nota").value; <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var resultado; <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(nota > 0 && nota
+                                            < 4) { <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; resultado =
+                                            "Aplazado"; <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;}<br />
+                                            &#60;/script&#62;
+                                        </b>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    
+                    <!-- PASO 8 -->
+                    <li>
+                        <div class="collapsible-header purple lighten-2 white-text">
+                            Paso 8
+                        </div>
+                        <div class="collapsible-body">
+                            <ul class="collapsible">
+                                <li>
+                                    <div class="purple darken-2">
+                                        <br />
+                                        <p class="white-text left-align container">
+                                            Vamos a evaluar la siguiente <b>condicion</b>. <br />
+                                            <b class="yellow lighten-2 black-text">
+                                                Mostrar "Desaprobado", si la nota está entre 4 y 6 (inclusive)
+                                            </b> <br />
+                                            Siguiendo la misma logica, crearemos un nuevo <b>if</b>, asignandole el valor
+                                            "Desaprobado" si
+                                            la nota es > 3 <b>y</b>
+                                            < 7 </p>
+                                                <br />
+                                    </div>
+                                    <!-- Paso 8 - Header -->
+                                    <div class="collapsible-header purple lighten-2 white-text">
+                                        Ver resultado
+                                    </div>
+                                    <!-- Paso 8 - Body desplegable -->
+                                    <div class="collapsible-body blue-grey darken-4 white-text left-align">
+                                        <b>
+                                            <!-- Resultado -->
+                                            &#60;script&#62; <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;function mostrarResultado(){<br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var nota =
+                                            document.getElementById("nota").value; <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var resultado; <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(nota > 0 && nota
+                                            < 4) { <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; resultado =
+                                            "Aplazado"; <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(nota > 3 && nota
+                                            < 7) { <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; resultado =
+                                            "Desaprobado"; <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;}<br />
+                                            &#60;/script&#62;
+                                        </b>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- PASO 9 -->
+                    <li>
+                        <div class="collapsible-header purple lighten-2 white-text">
+                            Paso 9
+                        </div>
+                        <div class="collapsible-body">
+                            <ul class="collapsible">
+                                <li>
+                                    <div class="purple darken-2">
+                                        <br />
+                                        <p class="white-text left-align container">
+                                            Vamos a evaluar la siguiente <b>condicion</b>. <br />
+                                            <b class="green lighten-2 black-text">
+                                                Mostrar "Aprobado", si la nota está entre 7 y 10 (inclusive)
+                                            </b> <br />
+                                            Siguiendo la misma logica, crearemos un tercer <b>if</b>, asignandole el valor
+                                            "Aprobado" si
+                                            la nota es > 6 <b>y</b>
+                                            < 11 </p>
+                                                <br />
+                                    </div>
+                                    <!-- Paso 9 - Header -->
+                                    <div class="collapsible-header purple lighten-2 white-text">
+                                        Ver resultado
+                                    </div>
+                                    <!-- Paso 9 - Body desplegable -->
+                                    <div class="collapsible-body blue-grey darken-4 white-text left-align">
+                                        <b>
+                                            <!-- Resultado -->
+                                            &#60;script&#62; <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;function mostrarResultado(){<br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var nota =
+                                            document.getElementById("nota").value; <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var resultado; <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(nota > 0 && nota
+                                            < 4) { <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; resultado =
+                                            "Aplazado"; <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(nota > 3 && nota
+                                            < 7) { <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; resultado =
+                                            "Desaprobado"; <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(nota > 6 && nota
+                                            < 11) { <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; resultado =
+                                            "Aprobado"; <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;}<br />
+                                            &#60;/script&#62;
+                                        </b>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!-- PASO 10 -->
+                    <li>
+                        <div class="collapsible-header purple lighten-2 white-text">
+                            Paso 10
+                        </div>
+                        <div class="collapsible-body">
+                            <ul class="collapsible">
+                                <li>
+                                    <div class="purple darken-2">
+                                        <br />
+                                        <p class="white-text left-align container">
+                                            Por ultimo, vamos a mostrar el contenido de la variable <b>resultado</b> en un
+                                            <b>alert</b>
+                                        </p>
+                                        <br />
+                                    </div>
+                                    <!-- Paso 10 - Header -->
+                                    <div class="collapsible-header purple lighten-2 white-text">
+                                        Ver resultado
+                                    </div>
+                                    <!-- Paso 10 - Body desplegable -->
+                                    <div class="collapsible-body blue-grey darken-4 white-text left-align">
+                                        <b>
+                                            <!-- Resultado -->
+                                            &#60;script&#62; <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;function mostrarResultado(){<br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var nota =
+                                            document.getElementById("nota").value; <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;var resultado; <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(nota > 0 && nota
+                                            < 4) { <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; resultado =
+                                            "Aplazado"; <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(nota > 3 && nota
+                                            < 7) { <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; resultado =
+                                            "Desaprobado"; <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if(nota > 6 && nota
+                                            < 11) { <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; resultado =
+                                            "Aprobado"; <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <br />
+            
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>alert(resultado);</b> <br />
+                                            &nbsp;&nbsp;&nbsp;&nbsp;}<br />
+                                            &#60;/script&#62;
+                                        </b>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+
+    <script src="js/materialize.min.js" type="text/javascript"></script>
+    <script>
+        M.AutoInit();
+    </script>
+</body>
+
+</html>
